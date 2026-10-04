@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NutriCare — Yoğun bakım kalori ve protein hesabı</title>
+<meta name="description" content="NutriCare: yoğun bakım hastaları için mama ve solüsyon kalori/protein hesaplama uygulaması. ICU nutrition calculator for iPhone.">
+<link rel="icon" href="icon.svg">
+<style>:root{--bg:#F1F5FA;--card:#fff;--ink:#0E1A2B;--soft:#4B5C73;--faint:#7C8CA3;--rule:#DCE4EE;--teal:#0C9E86;--indigo:#5162E0;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#070C15;--card:#0F1A2A;--ink:#EEF3FA;--soft:#A3B1C6;--faint:#6F7F96;--rule:#22324A;--teal:#34D4BE;--indigo:#7A8CFF}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--teal)}
+.wrap{max-width:720px;margin:0 auto;padding:26px 16px 40px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;margin-right:auto}
+.brand img{width:48px;height:48px;border-radius:11px}
+.brand b{font:700 24px/1.1 ui-rounded,"SF Pro Rounded",-apple-system,sans-serif}
+nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+nav a,.lang button{font:600 14px/1 -apple-system,sans-serif;text-decoration:none;color:var(--soft);padding:9px 12px;border-radius:999px;border:1px solid transparent;background:none;cursor:pointer}
+nav a[aria-current]{color:var(--ink);border-color:var(--rule);background:var(--card)}
+.lang{display:flex;border:1px solid var(--rule);border-radius:999px;padding:2px;margin-left:4px}
+.lang button{padding:7px 10px}.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+main{margin-top:24px;background:var(--card);border:1px solid var(--rule);border-radius:22px;padding:34px 26px 28px}
+.kicker{font:700 12px/1.4 -apple-system,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+h1{font:700 clamp(30px,7vw,42px)/1.1 ui-rounded,"SF Pro Rounded",-apple-system,sans-serif;letter-spacing:-.02em;margin:0 0 14px}
+h2{font:700 22px/1.25 ui-rounded,"SF Pro Rounded",-apple-system,sans-serif;margin:32px 0 10px;padding-top:18px;border-top:1px solid var(--rule)}
+p,li{color:var(--soft)}strong{color:var(--ink)}.lead{font-size:19px;color:var(--ink)}
+.features{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:12px}
+.features li{border:1px solid var(--rule);border-radius:14px;padding:14px 16px;background:var(--bg)}
+.features b{display:block;font-size:17px;color:var(--ink);margin-bottom:2px}
+.contact{border:1px solid var(--rule);border-left:4px solid var(--teal);border-radius:12px;padding:14px 16px;background:var(--bg);margin:14px 0}
+.contact a{font-weight:700;font-size:18px;word-break:break-all}
+.note{border:1px solid var(--rule);border-left:4px solid var(--indigo);border-radius:12px;padding:14px 16px;background:var(--bg);margin:22px 0 0;font-size:15px}
+details{border-bottom:1px solid var(--rule);padding:4px 0}
+summary{cursor:pointer;font-weight:700;padding:10px 0;list-style:none;color:var(--ink)}
+summary::-webkit-details-marker{display:none}summary:before{content:"+";display:inline-block;width:22px;color:var(--teal)}
+details[open] summary:before{content:"–"}details p{margin:0 0 12px 22px}
+.meta{font-size:13px;color:var(--faint)}
+footer{margin-top:20px;font-size:13px;color:var(--faint)}footer a{color:var(--faint)}
+html:not(.l-en) [data-l=en],html.l-en [data-l=tr]{display:none!important}
+@media (max-width:520px){main{padding:26px 18px 22px}}</style>
+<script>(function(){var h=document.documentElement,l=null;try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
+if(!l){try{l=localStorage.getItem('nutricare-lang')}catch(e){}}
+if(!l){l=((navigator.language||'tr').toLowerCase().indexOf('tr')===0)?'tr':'en'}
+function set(en){h.classList.toggle('l-en',en);h.lang=en?'en':'tr';document.querySelectorAll('[data-set]').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-set')==='en')===en))})}
+set(l==='en');document.addEventListener('DOMContentLoaded',function(){set(h.classList.contains('l-en'))});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(!b)return;var en=b.getAttribute('data-set')==='en';set(en);try{localStorage.setItem('nutricare-lang',en?'en':'tr')}catch(x){}})})();</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="index.html"><img src="icon.svg" alt=""><b>NutriCare</b></a>
+<nav><a href="index.html" aria-current=page><span data-l="tr">Uygulama</span><span data-l="en">App</span></a><a href="support.html"><span data-l="tr">Destek</span><span data-l="en">Support</span></a><a href="privacy.html"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a><span class="lang" role="group" aria-label="Dil / Language"><button type="button" data-set="tr">TR</button><button type="button" data-set="en">EN</button></span></nav>
+</header>
+<main>
+<div data-l="tr">
+<p class="kicker">iPhone uygulaması</p>
+<h1>Yoğun bakımda kalori ve protein hesabı</h1>
+<p class="lead">NutriCare, hastanın aldığı mama ve solüsyonların kalorisini ve proteinini miktar girdikçe anında hesaplar; günlük hedefle karşılaştırır.</p>
+<ul class="features">
+<li><b>Tüm ürünler tek ekranda</b>25 enteral, oral, parenteral ve modüler ürün listelenir. Hangisine miktar (cc, saşe, flakon) yazarsanız hesaba o girer.</li>
+<li><b>Anında toplam</b>Birim başına değer × verilen miktar. Toplam kalori ve protein, kalan miktar, kcal/kg ve g/kg değerleri canlı güncellenir.</li>
+<li><b>Hasta hedefi</b>Kilo, boy ve kg başına hedefe göre günlük kalori ve protein; mevcut, ideal veya düzeltilmiş ağırlıkla.</li>
+<li><b>Düzenlenebilir ürün listesi</b>Değerleri değiştirin, kendi ürününüzü ekleyin, tek dokunuşla tüm miktarları sıfırlayın.</li>
+<li><b>Kayıtlar ve açık/koyu tema</b>Günlük özetleri saklayın, metin olarak paylaşın. Hesap yok, internet gerekmez, veri toplanmaz.</li>
+</ul>
+<div class="note">NutriCare bir hesaplama aracıdır; tanı koymaz, tedavi önermez ve klinik karar yerine geçmez. Beslenme planı ve hedefler, hastayı değerlendiren hekimin sorumluluğundadır. Ürün değerlerini üreticinin güncel etiketiyle karşılaştırın.</div>
+<p class="meta">Gereksinim: iPhone, iOS 17 veya üzeri · Arayüz dili: Türkçe</p>
+</div>
+<div data-l="en">
+<p class="kicker">iPhone app</p>
+<h1>Calories and protein for ICU nutrition</h1>
+<p class="lead">NutriCare instantly calculates the calories and protein of the formulas and solutions a patient receives as you enter volumes, and compares them with the daily target.</p>
+<ul class="features">
+<li><b>Every product on one screen</b>25 enteral, oral, parenteral and modular products are listed. Whatever you enter an amount for (mL, sachet, vial) is included.</li>
+<li><b>Instant totals</b>Value per unit × amount given. Total calories and protein, remaining amounts, kcal/kg and g/kg update live.</li>
+<li><b>Patient targets</b>Daily calories and protein from weight, height and per-kg goals, using actual, ideal or adjusted body weight.</li>
+<li><b>Editable product list</b>Change values, add your own products, reset every amount with one tap.</li>
+<li><b>Records and light/dark theme</b>Save daily summaries and share them as text. No account, no internet needed, no data collected.</li>
+</ul>
+<div class="note">NutriCare is a calculation tool. It does not diagnose, recommend treatment or replace clinical judgement. The nutrition plan and targets remain the responsibility of the treating clinician. Please check product values against the manufacturer's current label.</div>
+<p class="meta">Requires iPhone with iOS 17 or later · The app interface is in Turkish</p>
+</div>
+</main>
+<footer><p>© 2026 Enes Hopan · <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a> · <a href="../">eneshopan-ai.github.io</a></p></footer>
+</div>
+</body>
+</html>
