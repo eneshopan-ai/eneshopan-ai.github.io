@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Folio — Renkli not defteri</title>
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+<script>(function(){var h=document.documentElement,l=null;try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
+if(!l){try{l=localStorage.getItem('folio-lang')}catch(e){}}
+if(!l){l=(navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en'}
+function set(en){h.classList.toggle('l-en',en);h.lang=en?'en':'tr';document.querySelectorAll('[data-set]').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-set')==='en')===en))})}
+set(l==='en');
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(!b)return;var en=b.getAttribute('data-set')==='en';set(en);try{localStorage.setItem('folio-lang',en?'en':'tr')}catch(x){}})})();</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="index.html"><img src="icon.svg" alt=""><b>Folio</b></a>
+<nav><a href="index.html" aria-current=page><span data-l="tr">Uygulama</span><span data-l="en">App</span></a><a href="support.html"><span data-l="tr">Destek</span><span data-l="en">Support</span></a><a href="privacy.html"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a><span class="lang" role="group" aria-label="Dil / Language"><button type="button" data-set="tr">TR</button><button type="button" data-set="en">EN</button></span></nav>
+</header>
+<main>
+<p class="kicker">iPhone · iOS 17+</p><div data-l="tr" class="b"><h1>Karakteri olan bir not defteri.</h1></div><div data-l="en" class="b"><h1>A notebook with character.</h1></div><div data-l="tr" class="b"><p class="lead">Folio; yazdığın, çizdiğin, kaydettiğin ve işaretlediğin her şeyi tek yerde tutar. Beş ayrı tasarım teması, ana ekran widget'ları ve tamamen çevrimdışı çalışan bir defter.</p></div><div data-l="en" class="b"><p class="lead">Folio keeps everything you write, sketch, record and tick off in one place. Five distinct themes, Home Screen widgets and a notebook that works entirely offline.</p></div><ul class="features"><li><div data-l="tr" class="b"><b>Beş tasarım teması</b>Atölye, Masal, Çizgi Roman, Kozmos ve Botanik. Tema değişince renkler, yazı karakteri, dokular, illüstrasyonlar ve widget'lar birlikte değişir.</div><div data-l="en" class="b"><b>Five themes</b>Studio, Storybook, Comic, Cosmos and Herbarium. Switch one and the colours, type, textures, illustrations and widgets all change together.</div></li><li><div data-l="tr" class="b"><b>Zengin metin</b>Başlık, alıntı, kod; kalın, italik, renk ve fosforlu kalem. “# ” başlık yapar, “- ” madde açar.</div><div data-l="en" class="b"><b>Rich text</b>Headings, quotes, code; bold, italic, colour and highlighter. “# ” makes a heading, “- ” starts a bullet.</div></li><li><div data-l="tr" class="b"><b>Liste, çizim, ses, tarama</b>İşaretlenebilir listeler, Apple Pencil çizimi, sesli not, belge tarama ve görselden metin çıkarma.</div><div data-l="en" class="b"><b>Lists, sketches, audio, scans</b>Tickable checklists, Apple Pencil sketching, voice memos, document scanning and text extraction from images.</div></li><li><div data-l="tr" class="b"><b>Ana ekran widget'ları</b>Hızlı kayıt, sabit notlar, tek not, kilit ekranı ve uygulamayı açmadan işaretlenen yapılacaklar widget'ı.</div><div data-l="en" class="b"><b>Home Screen widgets</b>Quick capture, pinned notes, a single note, Lock Screen widgets and a checklist you can tick without opening the app.</div></li><li><div data-l="tr" class="b"><b>Gizli kalır</b>Notlar yalnızca cihazda saklanır. Hesap, reklam ve takip yok; istenirse Face ID ile kilitlenir.</div><div data-l="en" class="b"><b>Stays private</b>Notes stay on your device. No account, no ads, no tracking; lock them with Face ID if you like.</div></li></ul><div data-l="tr" class="b"><p class="note">Sorun ya da öneri için <a href="support.html">destek sayfasına</a> bakabilir, doğrudan <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a> adresine yazabilirsin.</p></div><div data-l="en" class="b"><p class="note">For questions or ideas see the <a href="support.html">support page</a>, or write to <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a>.</p></div>
+</main>
+<footer><div class="stripe" aria-hidden="true"><i style="background:#FF5B3A"></i><i style="background:#FF9A2E"></i><i style="background:#FFC83D"></i><i style="background:#2FC58E"></i><i style="background:#4FB2FF"></i><i style="background:#A98BFF"></i></div>
+<p>© 2026 Enes Hopan · <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a></p></footer>
+</div>
+</body>
+</html>
