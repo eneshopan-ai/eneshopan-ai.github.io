@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Karter — Bakım defteri</title>
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+<script>(function(){var h=document.documentElement,l=null;try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
+if(!l){try{l=localStorage.getItem('karter-lang')}catch(e){}}
+if(!l){l=(navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en'}
+function set(en){h.classList.toggle('l-en',en);h.lang=en?'en':'tr';document.querySelectorAll('[data-set]').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-set')==='en')===en))})}
+set(l==='en');
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(!b)return;var en=b.getAttribute('data-set')==='en';set(en);try{localStorage.setItem('karter-lang',en?'en':'tr')}catch(x){}});
+})();</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="index.html"><img src="icon.svg" alt=""><b>Karter</b></a>
+<nav><a href="index.html" aria-current=page><span data-l="tr">Uygulama</span><span data-l="en">App</span></a><a href="support.html"><span data-l="tr">Destek</span><span data-l="en">Support</span></a><a href="privacy.html"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a><span class="lang" role="group" aria-label="Dil / Language"><button type="button" data-set="tr">TR</button><button type="button" data-set="en">EN</button></span></nav>
+</header>
+<main>
+<p class="kicker">iPhone · iOS 17+</p><div data-l="tr" class="b"><h1>Aracının bakım defteri.</h1></div><div data-l="en" class="b"><h1>Your vehicle's service log.</h1></div><div data-l="tr" class="b"><p class="lead">Karter; motosiklet, araba ve klasik araç bakımlarını km ya da tarihe göre takip eder, vakti gelince hatırlatır, masrafı özetler ve satarken gösterebileceğin bir PDF bakım geçmişi üretir.</p></div><div data-l="en" class="b"><p class="lead">Karter tracks motorcycle, car and classic vehicle maintenance by distance or date, reminds you when it is due, sums up what you spend and produces a PDF service history you can show when you sell.</p></div><ul class="features"><li><div data-l="tr" class="b"><b>Yağ çubuğu göstergesi</b>Her bakımın kalan ömrü bir yağ çubuğudur: iyi, yaklaşıyor ya da gecikmiş. Km ve tarihten hangisi önce dolarsa o geçerlidir.</div><div data-l="en" class="b"><b>Dipstick gauge</b>Every job's remaining life is a dipstick: fine, coming up or overdue. Whichever comes first, distance or date, counts.</div></li><li><div data-l="tr" class="b"><b>Hatırlatma ve masraf</b>Tarihli işler vadesinden önce, km'ye bağlı işler sürüş hızından tahmin edilen güne göre hatırlatılır. Masraf yıl, ay ve kategoriye göre özetlenir.</div><div data-l="en" class="b"><b>Reminders and costs</b>Date-based jobs remind you before they are due; distance-based jobs by a date estimated from your riding pace. Costs are summed by year, month and category.</div></li><li><div data-l="tr" class="b"><b>Satarken PDF geçmiş</b>Pro ile aracının tüm bakım geçmişini temiz bir PDF olarak paylaş. Plaka ve şasi numarası varsayılan olarak konmaz.</div><div data-l="en" class="b"><b>A PDF history for selling</b>With Pro, share your vehicle's whole service history as a clean PDF. Plate and VIN stay off by default.</div></li><li><div data-l="tr" class="b"><b>Gizli kalır</b>Hesap, reklam ve takip yok. Verilerin yalnızca telefonunda saklanır.</div><div data-l="en" class="b"><b>Stays private</b>No account, no ads, no tracking. Your data lives only on your phone.</div></li></ul><div data-l="tr" class="b"><p class="note">Sorun ya da öneri için <a href="support.html">destek sayfasına</a> bakabilir, doğrudan <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a> adresine yazabilirsin.</p></div><div data-l="en" class="b"><p class="note">For questions or ideas see the <a href="support.html">support page</a>, or write to <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a>.</p></div>
+</main>
+<footer><p>© 2026 Enes Hopan · <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a></p></footer>
+</div>
+</body>
+</html>
