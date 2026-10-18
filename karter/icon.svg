@@ -1,11 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-<rect width="1024" height="1024" rx="228" fill="#17130F"/>
-<g transform="translate(512 533) rotate(-30) scale(1.18) translate(-512 -533)">
-<rect x="446" y="400" width="132" height="540" rx="66" fill="#EAE3D0"/>
-<clipPath id="r"><rect x="446" y="400" width="132" height="540" rx="66"/></clipPath>
-<rect x="446" y="627" width="132" height="313" fill="#CC3504" clip-path="url(#r)"/>
-<rect x="376" y="425" width="272" height="18" fill="#EAE3D0"/><rect x="446" y="425" width="132" height="18" fill="#17130F"/>
-<rect x="376" y="810" width="272" height="18" fill="#EAE3D0"/><rect x="446" y="810" width="132" height="18" fill="#17130F"/>
-<circle cx="512" cy="250" r="95" fill="none" stroke="#EAE3D0" stroke-width="58"/>
-<rect x="483" y="366" width="58" height="60" fill="#EAE3D0"/></g>
+<defs><clipPath id="c"><rect width="1024" height="1024" rx="228"/></clipPath></defs>
+<g clip-path="url(#c)">
+<rect width="1024" height="1024" fill="#FFD21F"/>
+<rect x="124" y="124" width="96" height="96" fill="#1F4FD8" transform="rotate(25 172 172)"/>
+<circle cx="845" cy="175" r="55" fill="#DA3822"/><circle cx="130" cy="410" r="30" fill="#FF8A00"/>
+<polygon fill="#DA3822" points="-92,816 36,808 0,1100 -128,1100"/><polygon fill="#FFFFFF" points="36,808 164,799 128,1100 0,1100"/><polygon fill="#DA3822" points="164,799 292,790 256,1100 128,1100"/><polygon fill="#FFFFFF" points="292,790 420,781 384,1100 256,1100"/><polygon fill="#DA3822" points="420,781 548,773 512,1100 384,1100"/><polygon fill="#FFFFFF" points="548,773 676,764 640,1100 512,1100"/><polygon fill="#DA3822" points="676,764 804,755 768,1100 640,1100"/><polygon fill="#FFFFFF" points="804,755 932,746 896,1100 768,1100"/><polygon fill="#DA3822" points="932,746 1060,738 1024,1100 896,1100"/><polygon fill="#FFFFFF" points="1060,738 1188,729 1152,1100 1024,1100"/>
+<line x1="-40" y1="840" x2="1064" y2="767" stroke="#14110B" stroke-width="26"/>
+<rect y="975" width="1024" height="49" fill="#14110B"/>
+<g transform="translate(14 18)" fill="#14110B" stroke="#14110B" stroke-width="30" stroke-linejoin="round"><path d="M152.0,640.0A360,360 0 0 1 332.0,328.2L397.0,440.8A230,230 0 0 0 282.0,640.0Z"/><path d="M332.0,328.2A360,360 0 0 1 692.0,328.2L627.0,440.8A230,230 0 0 0 397.0,440.8Z"/><path d="M692.0,328.2A360,360 0 0 1 872.0,640.0L742.0,640.0A230,230 0 0 0 627.0,440.8Z"/></g>
+<g stroke="#14110B" stroke-width="30" stroke-linejoin="round"><path d="M152.0,640.0A360,360 0 0 1 332.0,328.2L397.0,440.8A230,230 0 0 0 282.0,640.0Z" fill="#DA3822"/><path d="M332.0,328.2A360,360 0 0 1 692.0,328.2L627.0,440.8A230,230 0 0 0 397.0,440.8Z" fill="#FFA000"/><path d="M692.0,328.2A360,360 0 0 1 872.0,640.0L742.0,640.0A230,230 0 0 0 627.0,440.8Z" fill="#1FBF5B"/></g>
+<g stroke-linecap="round"><line x1="512" y1="640" x2="680.8" y2="380.0" stroke="#14110B" stroke-width="84"/>
+<line x1="512" y1="640" x2="680.8" y2="380.0" stroke="#FFFFFF" stroke-width="34"/></g>
+<circle cx="512" cy="640" r="80" fill="#DA3822" stroke="#14110B" stroke-width="30"/><circle cx="512" cy="640" r="24" fill="#FFD21F"/>
+</g>
 </svg>
