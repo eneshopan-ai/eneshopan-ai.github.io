@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Water Alarm — Su içme takibi</title>
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+<script>(function(){var h=document.documentElement,l=null;try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
+if(!l){try{l=localStorage.getItem('wateralarm-lang')}catch(e){}}
+if(!l){l=(navigator.language||'tr').toLowerCase().indexOf('tr')===0?'tr':'en'}
+function set(en){h.classList.toggle('l-en',en);h.lang=en?'en':'tr';document.querySelectorAll('[data-set]').forEach(function(b){b.setAttribute('aria-pressed',String((b.getAttribute('data-set')==='en')===en))})}
+set(l==='en');
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set]');if(!b)return;var en=b.getAttribute('data-set')==='en';set(en);try{localStorage.setItem('wateralarm-lang',en?'en':'tr')}catch(x){}})})();</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="brand" href="index.html"><img src="icon.svg" alt=""><b>Water Alarm</b></a>
+<nav><a href="index.html" aria-current=page><span data-l="tr">Uygulama</span><span data-l="en">App</span></a><a href="support.html"><span data-l="tr">Destek</span><span data-l="en">Support</span></a><a href="privacy.html"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a><span class="lang" role="group" aria-label="Dil / Language"><button type="button" data-set="tr">TR</button><button type="button" data-set="en">EN</button></span></nav>
+</header>
+<main>
+<p class="kicker">iPhone · iOS 17+</p><div data-l="tr" class="b"><h1>Su içmeyi unutma.</h1></div><div data-l="en" class="b"><h1>Never forget to drink.</h1></div><div data-l="tr" class="b"><p class="lead">Water Alarm günlük su içme takibini kolaylaştırır: kişisel hedefini hesaplar, düzenli aralıklarla hatırlatır ve ne kadar içtiğini gerçek suya benzeyen bir bardakla gösterir.</p></div><div data-l="en" class="b"><p class="lead">Water Alarm makes daily water tracking easy: it works out your personal goal, reminds you at regular intervals and shows your progress with a glass that looks like real water.</p></div><ul class="features"><li><div data-l="tr" class="b"><b>Gerçek suya benzeyen bardak</b>Günlük hedefine doğru dolan, yansımaları ve kabarcıkları olan bir bardak. Hedefi aşınca su kenarlardan şelale gibi taşar.</div><div data-l="en" class="b"><b>A glass that looks like real water</b>A glass that fills toward your daily goal, with reflections and bubbles. Go past the goal and the water cascades over the rim.</div></li><li><div data-l="tr" class="b"><b>Sana göre günlük hedef</b>Neden su içtiğini, cinsiyetini, kilonu ve boyunu söylersin; günlük su ihtiyacını hesaplar. İstediğin zaman değiştirirsin.</div><div data-l="en" class="b"><b>A goal made for you</b>Tell it why you want to drink more, plus your gender, weight and height, and it works out your daily water need. Change it any time.</div></li><li><div data-l="tr" class="b"><b>3 saatte bir hatırlatma</b>Her gün 09:00–21:00 arasında, 3 saatte bir su içmeni hatırlatır. Ayarlardan kapatabilirsin.</div><div data-l="en" class="b"><b>A reminder every 3 hours</b>A gentle nudge to drink water every 3 hours between 9:00 and 21:00. Turn it off in Settings.</div></li><li><div data-l="tr" class="b"><b>Water Alarm Pro</b>Su her zaman ücretsiz. Pro ile çay, bitki çayı, kahve, süt, meyve suyu, gazlı ve spor içeceğini de kaydedersin; her biri su hedefine kendi oranında sayılır. Aylık veya yıllık abonelik, 1 ay ücretsiz deneme.</div><div data-l="en" class="b"><b>Water Alarm Pro</b>Water is always free. With Pro you can also log tea, herbal tea, coffee, milk, juice, soda and sports drinks, each counting toward your goal at its own rate. Monthly or yearly subscription, with a 1-month free trial.</div></li><li><div data-l="tr" class="b"><b>Verilerin sende kalır</b>Kayıtların ve bilgilerin yalnızca cihazında saklanır. Hesap, reklam ve takip yok.</div><div data-l="en" class="b"><b>Your data stays with you</b>Your entries and details stay on your device. No account, no ads, no tracking.</div></li></ul><div data-l="tr" class="b"><p class="note">Sorun ya da öneri için <a href="support.html">destek sayfasına</a> bakabilir, doğrudan <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a> adresine yazabilirsin.</p></div><div data-l="en" class="b"><p class="note">For questions or ideas see the <a href="support.html">support page</a>, or write to <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a>.</p></div>
+</main>
+<footer><div class="stripe" aria-hidden="true"><i style="background:#9BEFFF"></i><i style="background:#27C3FF"></i><i style="background:#1578F2"></i><i style="background:#0A3CAE"></i></div>
+<p>© 2026 Enes Hopan · <a href="mailto:eneshopan@icloud.com">eneshopan@icloud.com</a></p></footer>
+</div>
+</body>
+</html>

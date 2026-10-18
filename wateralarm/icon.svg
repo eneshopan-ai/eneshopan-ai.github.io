@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0850C7"/><stop offset="1" stop-color="#03164F"/></linearGradient>
+<linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A8F7FF"/><stop offset=".3" stop-color="#33C7FF"/><stop offset=".72" stop-color="#0F7AF5"/><stop offset="1" stop-color="#054ACC"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B3FAFF"/><stop offset="1" stop-color="#24A8FF"/></linearGradient>
+<radialGradient id="g" cx=".5" cy=".55" r=".6"><stop offset="0" stop-color="#33B8FF" stop-opacity=".55"/><stop offset="1" stop-color="#33B8FF" stop-opacity="0"/></radialGradient>
+<clipPath id="c"><path id="wp" d="M168 318 Q458 198 748 318 L670 800 Q670 846 624 846 L292 846 Q246 846 246 800 Z"/></clipPath>
+</defs>
+<rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+<rect width="1024" height="1024" rx="228" fill="url(#g)"/>
+<ellipse cx="484" cy="852" rx="260" ry="24" fill="#00092E" opacity=".45"/>
+<g clip-path="url(#c)"><rect x="140" y="200" width="640" height="660" fill="url(#w)"/>
+<g fill="none" stroke="#fff" stroke-linecap="round" stroke-opacity=".32" stroke-width="11">
+<path d="M330 450q150-20 310 0"/><path d="M380 580q150 26 300 0"/><path d="M350 700q110-20 220 0"/></g>
+<g fill="none" stroke="#fff" stroke-width="6"><circle cx="390" cy="520" r="16" stroke-opacity=".8"/><circle cx="580" cy="430" r="11" stroke-opacity=".7"/><circle cx="520" cy="660" r="22" stroke-opacity=".75"/></g>
+<path d="M192 300 Q458 190 724 300" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".95"/></g>
+<path d="M168 318 L746 318 L670 800 Q670 846 624 846 L292 846 Q246 846 246 800 Z" fill="none" stroke="#EDFCFF" stroke-opacity=".96" stroke-width="22" stroke-linejoin="round"/>
+<path d="M254 392 L272 640" stroke="#fff" stroke-opacity=".66" stroke-width="22" stroke-linecap="round"/>
+<path d="M610 150 Q612 250 732 300 L790 352 L790 600 Q790 640 758 640 Q744 640 744 600 L744 372 Q700 330 610 290 Z" fill="url(#s)" transform="translate(0 20)"/>
+<g fill="#6FD6FF"><path d="M787 690c-26 38-30 54-30 70a30 30 0 0 0 60 0c0-16-4-32-30-70z"/><path d="M782 810c-16 24-20 34-20 44a20 20 0 0 0 40 0c0-10-4-20-20-44z"/></g>
+</svg>
